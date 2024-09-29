@@ -1,11 +1,27 @@
+"""CP1404 - Refactoring password check program into function"""
 
-PASSWORD = "apple"
+SECRET = "apple"
 
-key = input("Enter password: ")
-while key != PASSWORD:
-    print("Wrong password!")
-    key = input("Enter password: ")
-length = PASSWORD
-print("correct!")
-for i in range(len(length)):
-    print("*", end="")
+
+def main():
+    password = get_password()
+    while password != SECRET:
+        print("Wrong password!")
+        password = get_password()
+    print("correct!")
+    print_asterisks(password)
+
+
+def print_asterisks(password):
+    """Print asterisks"""
+    for i in range(len(password)):
+        print("*", end="")
+
+
+def get_password():
+    """get password"""
+    password = input("Enter password: ")
+    return password
+
+
+main()
