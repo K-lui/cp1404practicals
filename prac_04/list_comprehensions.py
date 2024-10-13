@@ -33,7 +33,7 @@ print(" ".join(sorted(names)))
 lowercase_full_names = []
 for full_name in full_names:
     lowercase_full_names.append(full_name.lower())
-print(lowercase_full_names)
+print(f"List of lowercase full names >>> {lowercase_full_names}")
 
 
 almost_numbers = ['0', '10', '21', '3', '-7', '88', '9']
@@ -41,10 +41,17 @@ almost_numbers = ['0', '10', '21', '3', '-7', '88', '9']
 numbers = []
 for string in almost_numbers:
     numbers.append(int(string))
-print(numbers)
+print(f"List of integers >>> {numbers}")
+
 
 # TODO: list comprehension to create a list of only the numbers that are
 # greater than 9 from the numbers (not strings) you just created
+big_numbers = []
+for number in numbers:
+    if number > 9:
+        big_numbers.append(number)
+print(f"List of numbers greater than 9 >>> {big_numbers}")
+
 
 # TODO: (more advanced) use a list comprehension and the join string method
 # to create a string (not list) of the last names for those full names longer than 11 characters
