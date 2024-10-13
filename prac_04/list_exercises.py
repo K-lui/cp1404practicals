@@ -1,6 +1,5 @@
 """
-CP1404/CP5632 Practical - Suggested Solution
-List exercises
+CP1404/CP5632 Practical - List exercises
 """
 
 # 1. Numbers stuff
