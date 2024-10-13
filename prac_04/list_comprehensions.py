@@ -30,11 +30,16 @@ print(a_names)
 print(" ".join(sorted(names)))
 
 # TODO: list comprehension to create a list of all the full_names in lowercase format
-# lowercase_full_names =
+lowercase_full_names = []
+for full_name in full_names:
+    lowercase_full_names.append(full_name.lower())
+print(lowercase_full_names)
+
 
 almost_numbers = ['0', '10', '21', '3', '-7', '88', '9']
 # TODO: list comprehension to create a list of integers from the above list of strings
-# numbers =
+for number in almost_numbers:
+    print(int(almost_numbers))
 
 # TODO: list comprehension to create a list of only the numbers that are
 # greater than 9 from the numbers (not strings) you just created
