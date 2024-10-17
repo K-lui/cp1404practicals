@@ -3,16 +3,14 @@ CP1404/CP5632 Practical
 Hex colours Program
 """
 
-COLOUR_TO_CODE = {"AliceBlue": "#f0f8ff", "Amber": "#ffbf00", "Amethyst": "#9966cc", "Aqua": "#00ffff", "Beige":
-    "#f5f5dc", "Black": "#000000", "Blond": "#faf0be", "Bone": "#e3dac9", "Corn": "#fbec5d", "Cream": "#fffdd0"}
+COLOUR_TO_CODE = {"aliceblue": "#f0f8ff", "amber": "#ffbf00", "amethyst": "#9966cc", "aqua": "#00ffff", "beige":
+    "#f5f5dc", "black": "#000000", "blond": "#faf0be", "bone": "#e3dac9", "corn": "#fbec5d", "cream": "#fffdd0"}
 print(COLOUR_TO_CODE)
 
-state_code = input("Enter short state: ").lower()
-while state_code != "":
+colour = input("Enter colour: ").lower()
+while colour != "":
     try:
-        print(state_code, "is", COLOUR_TO_CODE[state_code])
+        print(colour, "is", COLOUR_TO_CODE[colour])
     except KeyError:
         print("Invalid short state")
-    state_code = input("Enter short state: ").lower()
-# for state_code in COLOUR_TO_CODE:
-#     print(f"{state_code:4} is {COLOUR_TO_CODE[state_code]}")
+    colour = input("Enter short state: ").lower()
