@@ -1,20 +1,23 @@
-"""
-CP1404 Practical 06 - Programming Language
+class ProgrammingLanguage:
+
+    def __init__(self, name="", typing="", reflection=True or False, year=0):
+        self.name = name
+        self.typing = typing
+        self.reflection = reflection
+        self.year = year
+
+    def __str__(self):
+        return f"{self.name}, {self.typing} Typing, Reflection={self.reflection}, First appeared in {self.year}"
+
+    def is_dynamic(self):
+        """Return languages that are dynamic"""
+        if self.typing == "Dynamic":
+            return {self.typing}
 
 
-Programming Language
-Estimate: 120 minutes
-Actual:    32 minutes
-"""
 
-from prac_06.languages import ProgrammingLanguage
 
-python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
-ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
-visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
-# print(python) # Ignore this line
-languages = [python, ruby, visual_basic]
-print("The dynamically typed languages are:")
-for row in languages:
-    if row.is_dynamic():
-        print(row.name)
+
+
+
+
