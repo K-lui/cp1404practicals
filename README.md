@@ -12,7 +12,7 @@ The repo includes weekly practicals/practices primarily dealing with the followi
 * Class and OOP
 * GUI Programming & Kivy
 * Inheritance 
- 
+
 ## Myself 
 
 My name is Kevin Lui, I am currently studying Bachelor of Information Technology.
