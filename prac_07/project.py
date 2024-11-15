@@ -8,10 +8,9 @@ class Project:
         self.completion = completion
 
     def __str__(self):
-        formatted_date = self.start_date.strftime("%m/%d/%Y")
+        formatted_date = self.start_date.strftime("%d/%m/%Y")
         return (f'{self.name}, start: {formatted_date}, priority {self.priority}, estimate: ${self.cost},'
                 f' completion: {self.completion}%')
 
     def is_later_than(self, start_date):
         return self.start_date.date() >= start_date
-
