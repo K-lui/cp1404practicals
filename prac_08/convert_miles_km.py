@@ -1,5 +1,5 @@
 """
-CP1404 Week 8 Workshop - GUI program to convert miles to kilometres
+CP1404 Week 8 Workshop - Miles to Kilometres Converter
 Kevin Lui, IT@JCU
 18/11/2024
 """
@@ -34,8 +34,8 @@ class MilesConverterApp(App):
         """
         value = self.get_validated_miles() + change
         self.root.ids.input_miles.text = str(value)
-        # self.handle_calculate()
-        self.handle_update()
+        self.handle_calculate()
+        # self.handle_update() # Ignore this
 
     def get_validated_miles(self):
         """
@@ -48,10 +48,11 @@ class MilesConverterApp(App):
         except ValueError:
             return 0
 
-    def handle_update(self):
-        """Handle changes to the text input by updating the model from the view."""
-        self.message = self.root.ids.input_miles.text
-        self.handle_calculate()
+    # Ignore this function
+    # def handle_update(self):
+    #     """Handle changes to the text input by updating the model from the view."""
+    #     self.message = self.root.ids.input_miles.text
+    #     self.handle_calculate()
 
 
 MilesConverterApp().run()
